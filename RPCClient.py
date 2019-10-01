@@ -1,7 +1,3 @@
-# =============================================================================
-# CPSC-55500 Week  Assignment - Vacation Trip RPC Client
-# =============================================================================
-
 import xmlrpc.client  # Python 3
 import sys
 
@@ -106,37 +102,4 @@ def AddNew(calledServer, server_dict, iResType):
                 print(calledServer.RemoveReservation(False),'\n')
 
 if __name__ == '__main__':
-    main()       
-
-#%% Removed
-#from datetime import datetime
-#import sys
-
-#iFromDate = datetime.strptime(input('Check-in date (mm/dd/yy): '), '%m/%d/%y')
-#iTomDate = datetime.strptime(input('Check-out date (mm/dd/yy): '), '%m/%d/%y')
-
-#    print('===============================================================')
-#    print('>>> Calling GetReservationList (Airlines)...\n')
-#    listOfAirlineRes = airlineServer.GetReservationList()
-#    print(listOfAirlineRes) 
-#    print('===============================================================\n')
-#    
-#    print('===============================================================')
-#    print('>>> Calling GetReservationList (Cars)...\n')
-#    listOfCarRes = carServer.GetReservationList()
-#    print(listOfCarRes) 
-#    print('===============================================================\n')
-#
-#        %% Delete a reservation
-#        print('===============================================================')
-#        print('>>> Calling RemoveReservation (', server_dict[iResType][1], ')...\n')
-#        iDeleteBool = input('Do you wish to delete a reservation (Y/N)? ')
-#        if iDeleteBool == 'Y':
-#            iResID = int(input('Reservation ID you wish to delete: '))
-##            calledServer.RemoveReservation(iResID)
-#            print('Reservation Removed Successfully')
-#            print('...', calledServer.RemoveReservation(False))
-#        print('===============================================================\n')
-#        
-#        #%% Display lists of reservations
-#        if iDeleteBool == 'Y': display_res()
+    main()
